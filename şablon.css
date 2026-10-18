@@ -1,0 +1,15 @@
+#merhaba{
+    color: blue;
+    font-size: 16px;
+    text-align: left;
+}
+#deneme{
+    color: green;
+    font-size: 14px;
+    text-align: center;
+}
+.örnekclass{
+    color: red;
+    font-size: 20px;
+    text-align: right;
+}
