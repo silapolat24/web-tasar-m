@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var txt1="what a very";
+        var txt2="nice day";
+        var firstname,lastname;
+        firstname="Sıla";
+        lastname="Polat";
+        var sayı1="100"
+        var sayı2="10"
+        var sonuc= sayı1-sayı2;
+        document.write(sonuc);
+        document.write("<br>");
+        document.write(txt1+" "+txt2);
+        document.write("<br>");
+        document.write("benim adım" +" " +firstname );
+        document.write("<br>");
+        document.write( "soyadım"+" "+ lastname);
+        document.write("<br>");
+
+
+        var x=5+5;
+        document.write(x);
+        document.write("<br>");
+        var x="5"+"5";
+        document.write(x);
+        document.write("<br>");
+        var x=5+"5";
+        document.write(x);
+        document.write("<br>");
+        var x="5"+5;
+        document.write(x);
+        document.write("<br>");
+
+        var age="21";
+        if(age<18){
+            document.write("henüz reşit degilsiniz");
+            document.write("<br>");
+
+        }
+        else if(age>=18 && age<23){
+            document.write("reşitsiniz ama 23 yaşına gelmeden üniversiteyi bitirmelisiniz.");
+            document.write("<br>");
+
+        }
+        else {
+            document.write("23 yaşına geldiğinizde üniversiteyi bitirmiş olmalısınız");
+            document.write("<br>");
+
+        }
+
+        var time= new Date().getHours();
+        if(time<10){
+            document.write("Günaydın");
+        }
+        else if(time<17){
+            document.write("iyi Günler");
+        }
+        else{
+            document.write("iyi geceler");
+        }
+        
+        var günler=["pazar","pazartesi","salı","çarşamba","perşembe","cuma","cumartesi"];
+        switch(new Date().getDay()){
+            
+            case 0:
+            document.write("<br>Bugun günlerden " + günler[0]);
+            break;
+            case 1:
+            document.write("<br>Bugun günlerden " + günler[1]);
+            break;
+            case 2:
+            document.write("<br>Bugun günlerden " + günler[2]);
+            break;
+            case 3:
+            document.write("<br>Bugun günlerden " + günler[3]);
+            break;
+            case 4:
+            document.write("<br>Bugun günlerden " + günler[4]);
+            break;
+            case 5:
+            document.write("<br>Bugun günlerden " + günler[5]);
+            break;
+            
+        }
+
+        alert( "lütfen tarayıcıyı yeniden başlatın.");
+        confirm("lütfen çerezleri kabul edin");
+        prompt("lütfen adınızı girin:");
+
+        function Uyarı(){
+            alert("Bu bir uyarı mesajıdır");
+        }
+
+        function Toplama( sayı1,sayı2){
+            var toplam=sayı1+sayı2;
+            return toplam;
+            document.write("Toplam:" + Toplama(5,10));
+        }
+
+    </script>
+    
+</head>
+<body>
+    <form>
+        <input type="button" value="uyarı ver" onclick="Uyarı()">
+        <input type="button" value="Sayıları topla" onclick="document.write('Toplam:' + Toplama(5,10))">
+    </form>
+</body>
+</html>
